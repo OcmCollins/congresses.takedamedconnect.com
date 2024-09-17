@@ -1,0 +1,26 @@
+version: 1
+indices:
+  default:
+    include:
+      - '/**'
+    exclude:
+      - 'author-guide/**'
+      - 'copy/**'
+      - 'drafts/**'
+      - 'pdfs/**'
+      - '/footer'
+      - '/nav'
+    target: /query-index.json
+    properties:
+      title:
+        select: head > title
+        value: textContent(el)
+      description:
+        select: head > meta[name="description"]
+        value: attribute(el, "content")
+      image:
+        select: head > meta[property="og:image"]
+        value: match(attribute(el, "content"), "https:\/\/[^/]+(/.*)")
+      lastModified:
+        select: none
+        value: parseTimestamp(headers["last-modified"], "ddd, DD MMM YYYY hh:mm:ss GMT")

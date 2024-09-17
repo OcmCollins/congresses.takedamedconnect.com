@@ -1,0 +1,68 @@
+
+.brand-colors.block {
+  border: 1px solid var(--black-olive);
+}
+
+.brand-colors.block > div {
+  display: flex;
+  border-bottom: 1px solid var(--black-olive);
+}
+
+.brand-colors.block > div:last-of-type {
+  border-bottom: none;
+}
+
+.brand-colors.block > div p {
+  margin: 0;
+  padding: 5px 15px;
+}
+
+
+.brand-colors.block > div .name {
+  flex-basis: 30%;
+}
+
+.brand-colors.block > div .swatch {
+  flex-basis: 70%;
+}
+
+.brand-colors.block > div.gammagard-liquid .swatch {
+  background-color: var(--gammagard-liq);
+}
+
+.brand-colors.block > div.gammagard-sd .swatch {
+  background-color: var(--gammagard-sd);
+}
+
+.brand-colors.block > div.hyqvia .swatch {
+  background-color: var(--hyqvia);
+}
+
+.brand-colors.block > div.cuvitru .swatch {
+  background-color: var(--cuvitru);
+}
+
+.brand-colors.block > div.flexbumin .swatch {
+  background-color: var(--flexbumin);
+}
+
+.brand-colors.block > div.glassia .swatch {
+  background-color: var(--glassia);
+}
+
+.brand-colors.block > div.aralast .swatch {
+  background-color: var(--aralast);
+}
+
+.brand-colors.block > div.onepath .swatch {
+  background-color: var(--onepath);
+}
+
+.brand-colors.block > div.myigsource .swatch {
+  background-color: var(--myigsource);
+}
+
+.brand-colors.block > div.hello-programs .swatch {
+  background-color: var(--hello-programs);
+}
+

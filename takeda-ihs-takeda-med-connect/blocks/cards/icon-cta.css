@@ -1,0 +1,111 @@
+.cards.icon-cta.block {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.cards.icon-cta.block > .card {
+  display: flex;
+  position: relative;
+  padding-top: 16px;
+  flex-direction: column;
+  border-radius: 6px;
+  box-shadow: 0 4px 10px 0 rgba(0 0 0 / 20%);
+}
+
+.cards.icon-cta.block > .card > .card-content {
+  display: flex;
+  padding-top: 16px;
+  flex-wrap: wrap;
+  align-items: center;
+  flex: 1;
+  border-top: 5px solid var(--silver);
+  text-decoration: none;
+}
+
+
+.cards.icon-cta.block > .card > .card-content .card-icon {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 16px;
+  height: 100%;
+  align-items: center;
+  z-index: 1;
+}
+
+.cards.icon-cta.block > .card > .card-content .card-icon span.icon {
+  display: block;
+  height: 57px;
+  width: 57px;
+}
+
+.cards.icon-cta.block > .card > .card-content .card-icon span.icon img {
+  height: 100%;
+  width: 100%;
+}
+
+.cards.icon-cta.block > .card > .card-content .card-body {
+  padding-right: 16px;
+  margin-left: 89px;
+  flex: 1;
+}
+
+.cards.icon-cta.block > .card.no-icon > .card-content .card-body {
+  padding-left: 16px;
+  margin-left: 0;
+}
+
+.cards.icon-cta.block > .card > .card-link {
+  position: relative;
+  width: 100%;
+  height: 52px;
+  padding: 0 16px;
+  background-color: var(--bright-gray);
+}
+
+.cards.icon-cta.block > .card > a.card-link {
+  text-decoration: none;
+}
+
+.cards.icon-cta.block > .card > a.card-link:hover {
+  text-decoration: underline;
+}
+
+.cards.icon-cta.block > .card > .card-link span {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: var(--body-font-size-xs);
+  font-weight: var(--font-weight-bold);
+  color: var(--black);
+}
+
+.cards.icon-cta.block > .card > .card-content .card-body p {
+  font-size: var(--body-font-size-xs);
+}
+
+@media screen and (min-width: 600px) {
+  .cards.icon-cta.block > .card > .card-content .card-icon span.icon {
+    display: block;
+    height: 76px;
+    width: 76px;
+  }
+
+  .cards.icon-cta.block > .card > .card-content .card-body {
+    margin-left: 108px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .cards.icon-cta.block {
+    justify-content: center;
+    flex-flow: row wrap;
+  }
+
+  .cards.icon-cta.block > .card {
+    flex-basis: calc(50% - 8px);
+  }
+}

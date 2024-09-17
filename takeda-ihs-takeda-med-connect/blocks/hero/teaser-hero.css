@@ -1,0 +1,195 @@
+/* stylelint-disable property-no-vendor-prefix */
+/* stylelint-disable media-feature-range-notation */
+
+.hero.block.teaser .content-wrapper {
+  padding: 0;
+}
+
+.hero.block.teaser.teaser-hcp .content-wrapper {
+  padding-top: 32px;
+}
+
+.hero.block.teaser .content-wrapper .content {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.hero.block.teaser .content-wrapper .content p {
+  text-align: center;
+  font-size: var(--body-font-size-body-medium);
+}
+
+.hero.block.teaser .content-wrapper .content h1 {
+  font-size: var(--heading-font-size-h3);
+  padding-bottom: 0;
+}
+
+.hero.block.teaser .content-wrapper .content h1 em {
+  font-style: normal;
+  font-size: 58px;
+  font-weight: 700;
+  line-height: 63px;
+  background: linear-gradient(90deg, #EFDD6A 0%, #EF426F 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero.block.teaser.teaser-hcp .content-wrapper .content h1 em {
+  background: linear-gradient(90deg, #EFDD6A 0%, #2CD5C4 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero.block.teaser .content-wrapper .content ul li {
+  padding-left: 18px;
+}
+
+.hero.block.teaser .content-wrapper .content ul li::before {
+  top: 10px;
+  height: 0;
+  width: 0;
+  border: 3px solid var(--brand-text);
+}
+
+.hero.block.teaser .content-wrapper .content h4 {
+  margin-top: 26px;
+}
+
+.hero.block.teaser .content-wrapper .content h5 {
+  font-weight: normal;
+  font-size: var(--body-font-size-body-smallest);
+  font-family: var(--brand-font-family-regular);
+}
+
+.hero.block.teaser.teaser-hcp .content-wrapper .content ul {
+  padding-left: 10px;
+}
+
+.hero.block.teaser.teaser-hcp .content-wrapper .content ul,
+.hero.block.teaser.teaser-hcp .content-wrapper .content p,
+.hero.block.teaser.teaser-hcp .content-wrapper .content h5 {
+  text-align: left;
+}
+
+.hero.block.teaser .image .image-overlay {
+  color: var(--brand-white);
+  top: unset;
+  bottom: 30px;
+  right: 0;
+  left: unset;
+  width: 40vw;
+  max-width: 171px;
+}
+
+@media screen and (max-width: 389px) {
+  .hero.block.teaser .content-wrapper .content h1 em {
+    font-size: 55px;
+  }
+}
+
+@media screen and (max-width: 899px) {
+  .hero.block.teaser .image {
+    position: relative;
+    top: unset;
+    left: unset;
+    background: none;
+    order: 1;
+  }
+
+  .hero.block.teaser .image picture img {
+    position: relative;
+    top: unset;
+    left: unset;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .hero.block.teaser .content-wrapper {
+    max-width: 560px;
+    margin-left: auto;
+    margin-right: unset;
+    padding-top: 104px;
+    padding-bottom: 24px;
+  }
+
+  .hero.block.teaser.teaser-hcp .content-wrapper {
+    max-width: 603px;
+    padding-top: 64px;
+  }
+
+  .hero.block.teaser .content-wrapper .content h1,
+  .hero.block.teaser .content-wrapper .content h2,
+  .hero.block.teaser .content-wrapper .content h3,
+  .hero.block.teaser .content-wrapper .content h4,
+  .hero.block.teaser .content-wrapper .content h5,
+  .hero.block.teaser .content-wrapper .content p,
+  .hero.block.teaser .content-wrapper .content ul {
+    color: var(--brand-white);
+  }
+
+  .hero.block.teaser .content-wrapper .content h1 em {
+    font-size: 80px;
+    line-height: 96px;
+  }
+
+  .hero.block.teaser.teaser-hcp .content-wrapper .content h3:first-of-type,
+  .hero.block.teaser.teaser-hcp .content-wrapper .content ul,
+  .hero.block.teaser.teaser-hcp .content-wrapper .content p {
+    max-width: 536px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero.block.teaser.teaser-hcp .content-wrapper .content ul,
+  .hero.block.teaser.teaser-hcp .content-wrapper .content p {
+    padding: 0 40px;
+  }
+
+  .hero.block.teaser .content-wrapper .content ul li::before {
+    border: 3px solid var(--brand-white);
+  }
+
+  .hero.block.teaser.teaser-hcp .content-wrapper .content p {
+    padding-top: 16px;
+  }
+
+  .hero.block.teaser .content-wrapper .content h4:first-of-type {
+    margin-top: 0;
+  }
+
+  .hero.block.teaser .content-wrapper .content h5 {
+    text-align: right;
+  }
+
+  .hero.block.teaser.teaser-hcp .content-wrapper .content h5 {
+    padding-top: 24px;
+  }
+
+  .hero.block.teaser .image .image-overlay {
+    bottom: unset;
+    right: unset;
+    top: 85px;
+    left: 46.5%;
+  }
+
+  .hero.block.teaser p.button-container {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 95px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero.block.teaser .content-wrapper {
+    margin-right: 60px;
+  }
+
+  .hero.block.teaser .image picture img {
+    object-position: top center;
+  }
+}

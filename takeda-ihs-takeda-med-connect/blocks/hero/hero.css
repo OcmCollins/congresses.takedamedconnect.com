@@ -1,0 +1,35 @@
+@import url('default-hero.css');
+@import url('card-hero.css');
+@import url('product-hero.css');
+@import url('split-hero.css');
+@import url('teaser-hero.css');
+
+/* Global styles override for hero */
+main .section.hero-container {
+  padding: 0;
+  background-color: var(--brand-secondary-subtle);
+}
+
+main .section.hero-container>div {
+  padding: 0;
+  margin: 0;
+  max-width: unset;
+}
+
+/* End global overrides */
+
+.block.hero {
+  position: relative;
+}
+
+.block.hero.gray-background .image {
+  background-color: var(--bright-gray);
+}
+
+.block.hero.quartz-background .image {
+  background-color: var(--quartz);
+}
+
+.block.hero.cadet-background .image {
+  background-color: var(--cadet);
+}

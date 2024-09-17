@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <script src="/scripts/aem.js" type="module"></script>
+        <script src="/scripts/scripts.js" type="module"></script>
+        <link rel="stylesheet" href="/styles/styles.css"/>
+        <link rel="icon" href="data:,">
+        <title>Forms Importer</title>
+        <link rel="stylesheet" href="./css/styles.css">
+        <link rel="stylesheet" href="/blocks/form/form.css">
+    </head>
+    <body>
+        <header>
+        </header>
+        <div class="container">
+            <div class="left">
+                <h2>Configuration</h2>
+            
+                <form id="form" class="field-group" onkeydown="return event.key != 'Enter';">              
+                    <label for="domainURL">Enter Domain URL:</label>
+                    <input type="url" id="domainURL" placeholder="example.com" required value="">
+                    <div class="switchcontainer">
+                        <span>Include plain text</span>
+                        <label class="switch">
+                            <input type="checkbox" id="includePlainText">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                    <div class="switchcontainer hide">
+                        <b>Use iframe</b>
+                        <label class="switch">
+                            <input type="checkbox" id="useIframe">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                    <button id="startBtn">Scan</button>
+                </form>
+                <hr>
+                <h5>Status: </h5>
+                <div class="status"><span class="title" id="msg">Click Scan to Start</span></span> </div>
+                <div id="cards-container" class="cards-container" data-forms-index="0" data-pdfs-index="0"></div>
+            </div>
+            
+            <div class="right">
+                <div class="header">
+                    <h2>Preview Form</h2>
+                    <div class="toolbar">
+                        <div class="switchcontainer">
+                            <b>JSON View</b>
+                            <label class="switch">
+                                <input type="checkbox" id="switchView">
+                                <span class="slider"></span>
+                              </label>
+                        </div>
+                        <button id="copyAction" disabled>Copy</button>
+                    </div>
+                </div>
+                <hr>
+                <main>
+                    <div class="form-container form form-preview">
+                        Scan & Select the form.
+                    </div>
+                    <div id="editor" class="json-preview hide"></div>
+                </main>
+            </div>
+        </div>
+    </body>
+    <script src="./js/script.js" type="module"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.js"></script>
+</html>

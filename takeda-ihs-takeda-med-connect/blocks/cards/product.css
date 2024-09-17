@@ -1,0 +1,97 @@
+.cards.product.block {
+
+}
+.cards.product.block > .card {
+  display: flex;
+  flex-flow: row;
+  width: 100%;
+  gap: 1em;
+  border-color:var(--brand-border);
+  border-bottom: 1px solid;
+  padding:20px;
+}
+.cards.product.block .card:nth-child(even) {
+   background-color:var(--brand-secondary-subtle);
+}
+.cards.product.block .card img {
+  align-self:auto;
+  object-fit: contain;
+}
+.cards.product.block .card .button-wrapper {
+  display: flex;
+  align-items: flex-end;
+  align-self:auto;
+}
+.cards.product.block .card .details p {
+  text-align: left;
+  font-size: var(--body-font-size-xl);
+  margin-bottom:.25em;
+}
+
+.cards.product.block .card .button-wrapper .button-container  .icon.icon-download-button, .icon.icon-jump_link{
+  display: block;
+  width: 35px;
+  height: 35px;
+}
+
+.cards.product.block .card .button-wrapper .button-container > a {
+  background-color: unset;
+  padding:0;
+}
+
+.cards.product.block .card .button-wrapper .button-container .icon.icon-download-button {
+  display: block;
+  width: 35px;
+  height: 35px;
+}
+
+.cards.product.block .card .details {
+  width:85%;
+}
+
+.cards.product.block .card .image {
+
+}
+
+.cards.product.block .card .details .button-container{
+  align-self: flex-end;
+}
+
+.cards.product.block .card .details .button-container > a {
+  background-color: unset;
+}
+
+.cards.product.block .card .details .icon.icon-download-button,.icon.icon-jump_link {
+  display: block;
+  width: 35px;
+  height: 35px;
+}
+.cards.product.block .card .details .icon.icon-jump_link {
+  display: block;
+  width: 35px;
+  height: 35px;
+}
+
+.cards.product.block .card .details .icon.icon-download-button > svg {
+  width: 100%;
+  height: 100%;
+}
+
+  @media screen and (max-width: 600px) {
+    .cards.product.block .card {
+      flex-flow: column;
+      width:100%;
+      height:100%;
+
+    }
+    .cards.product.block .card .details {
+      width:100%;
+      height:100%;
+    }
+    .cards.product.block .card .button-wrapper {
+      width:100%;
+      height:100%;
+      justify-content: flex-start;
+
+    }
+}

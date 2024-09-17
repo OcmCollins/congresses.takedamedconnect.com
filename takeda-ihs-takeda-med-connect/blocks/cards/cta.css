@@ -1,0 +1,143 @@
+.cards.cta.block ul {
+  display: grid;
+  gap: 1em;
+}
+
+.cards.cta.block>ul>li {
+  display: flex;
+  padding: 24px;
+  box-shadow: 0 4px 10px 0 rgba(0 0 0 / 20%);
+  background-color: #fff;
+  justify-content: center;
+  position:relative ;
+}
+
+.cards.cta.block>ul>li div {
+  padding-top: 0;
+  border-top: 3px solid white;
+}
+
+.cards.cta.block>ul>li.onepath div {
+  /* border-color: var(--onepath); */
+}
+
+.cards.cta.block>ul>li.myigsource div {
+  /* border-color: var(--myigsource); */
+}
+
+.cards.cta.block>ul>li.hello-programs div {
+  /* border-color: var(--hello-programs); */
+}
+
+.cards.cta.block button.primary.top-link {
+  display: inline-block;
+  padding: 0;
+  font-weight: bold;
+  line-height: var(--line-height-l);
+  text-decoration: none;
+  border: 0;
+}
+
+.cards.cta.block .card-body .top-section {
+  position: relative;
+  margin-left: 12px;
+}
+
+.cards.cta.block .card-body p.link-container span.icon svg {
+  position: relative;
+  height: 25px;
+  width: 25px;
+}
+
+.cards.cta.block .card-body p.link-container span.icon {
+  display: block;
+  width: 100%;
+  position: absolute;
+  left: 96%;
+  top: -5px;
+}
+
+.cards.cta.block>ul>li div p.image {
+  width: 230px;
+}
+
+.cards.cta.block>ul>li picture {
+  display: block;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.cards.cta.block>ul>li picture img {
+  height: 100%;
+  width: 100%;
+  object-position: center center;
+  object-fit: contain;
+}
+
+.cards.cta.block>ul>li h3 {
+  font-size: var(--heading-font-size-xs);
+  text-align: left;
+  color: var(--gray-neutral-80);
+  margin-bottom:4px;
+}
+
+.cards.cta.block>ul>li p {
+  text-align: left;
+}
+
+.cards.cta.block>ul>li p.link-container {
+  text-align: left;
+}
+
+.cards.cta.block>ul>li p.button-container {
+  text-align: left;
+  margin-top:auto;
+}
+
+@media screen and (min-width: 900px) {
+  .cards.cta.block ul {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .cards.cta.block ul.cards-3 {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .cards.cta.block ul.cards-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .cards.cta.block>ul>li>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    height: 100%;
+  }
+
+  .cards.cta.block>ul>li>div>* {
+
+  }
+
+  .cards.cta.block>ul>li div p.image {
+    width: 100%;
+  }
+
+  .cards.cta.block .card-body {
+
+  }
+
+  .cards.cta.block .card-body p.link-container span.icon {
+    display: block;
+    width: 100%;
+    position: absolute;
+    left: 96%;
+    top: -5px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .cards.cta.block>ul>li div p.image {
+    width: 100%;
+  }
+}

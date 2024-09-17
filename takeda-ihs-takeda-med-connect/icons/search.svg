@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="43px" height="43px" viewBox="0 0 43 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 6</title>
+    <g id="Wireframe/Mockups" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Manufacturing-Copy" transform="translate(-85.000000, -1413.000000)" stroke="#EE1100" stroke-width="3">
+            <g id="Group-6" transform="translate(85.000000, 1413.000000)">
+                <circle id="Oval" cx="21.5" cy="21.5" r="20"></circle>
+                <g id="Group-7" transform="translate(12.000000, 11.000000)" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M13.5706394,3.09665387 C16.0024607,6.44927933 15.2561185,11.138639 11.903483,13.5706565 C8.55084738,16.0024704 3.86147356,15.2561305 1.42944875,11.9033014 C-1.00257607,8.55087956 -0.256030366,3.86131632 3.09660522,1.42950243 C6.44944439,-1.00251505 11.1388182,-0.256175182 13.5706394,3.09665387 Z" id="Stroke-1"></path>
+                    <line x1="13" y1="13" x2="19" y2="21" id="Stroke-3"></line>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

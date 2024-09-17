@@ -1,0 +1,38 @@
+
+.section > .section-background-image-gradient-wrapper,
+.section > .section-background-image-gradient-wrapper > .section-background-image-gradient.block {
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.section-background-image-gradient > div:first-of-type {
+    position: absolute;
+    height: 200px;
+    width: 100%;
+    z-index: 1;
+    background: linear-gradient(
+            180deg,
+            rgb(235 237 238 / 100%) 0%,
+            rgb(238 238 238 / 100%) 65%,
+            rgb(239 239 239 / 12%) 95%,
+            transparent 100%
+    );
+}
+
+.section-background-image-gradient picture {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    z-index: 0;
+}
+
+.section-background-image-gradient picture,
+.section-background-image-gradient picture > img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    object-fit: cover;
+}

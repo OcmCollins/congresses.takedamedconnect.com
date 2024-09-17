@@ -1,0 +1,329 @@
+/* Global styles override for isi-tray */
+main .section.isi-tray-container {
+  padding: 0;
+}
+
+main .section.isi-tray-container > div {
+  padding: 0;
+  margin: 0;
+  max-width: unset;
+}
+
+/* End global overrides */
+
+
+.isi-tray.block {
+  --tray-font-size: 13px;
+
+  position: relative;
+  padding: 0 20px 15px;
+  border-top: 2px solid var(--black-olive);
+}
+
+.isi-tray.block.gammagard-liquid {
+  border-color: var(--gammagard-liq);
+}
+
+.isi-tray.block.gammagard-sd {
+  border-color: var(--gammagard-sd);
+}
+
+.isi-tray.block.hyqvia {
+  border-color: var(--hyqvia);
+}
+
+.isi-tray.block.cuvitru {
+  border-color: var(--cuvitru);
+}
+
+.isi-tray.block.flexbumin {
+  border-color: var(--flexbumin);
+}
+
+.isi-tray.block.glassia {
+  border-color: var(--glassia);
+}
+
+.isi-tray.block.aralast {
+  border-color: var(--aralast);
+}
+
+.isi-tray.block .buttons {
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 20px;
+  justify-content: flex-end;
+  column-gap: 3px;
+}
+
+.isi-tray.block button {
+  display: flex;
+  padding: 0 14px;
+  height: 38px;
+  align-items: center;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.isi-tray.block.gammagard-liquid button {
+  background-color: var(--gammagard-liq);
+}
+
+.isi-tray.block.gammagard-sd button {
+  background-color: var(--gammagard-sd);
+}
+
+.isi-tray.block.hyqvia button {
+  background-color: var(--hyqvia);
+}
+
+.isi-tray.block.cuvitru button {
+  background-color: var(--cuvitru);
+}
+
+.isi-tray.block.flexbumin button {
+  background-color: var(--flexbumin);
+}
+
+.isi-tray.block.glassia button {
+ background-color: var(--glassia);
+}
+
+.isi-tray.block.aralast button {
+  background-color: var(--aralast);
+}
+
+.isi-tray.block button span {
+  font-family: system-ui;
+  font-size: var(--body-font-size-xxl);
+  font-weight: var(--font-weight-semibold);
+  color: var(--white);
+}
+
+.isi-tray.block h5 {
+  margin: 2px 0 6px;
+  font-family: var(--font-family-opensans);
+  font-size: var(--tray-font-size);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-xs);
+  color: var(--black-olive);
+}
+
+.isi-tray.block h5.upper {
+  text-transform: uppercase;
+}
+
+.isi-tray.block p {
+  font-size: var(--tray-font-size);
+  line-height: var(--line-height-xs);
+}
+
+.isi-tray.block ul {
+  margin: 0 0 1.5em 2em;
+  font-size: var(--tray-font-size);
+  list-style: disc;
+}
+
+.isi-tray.block ul li {
+  margin-bottom: 4px;
+  font-size: var(--tray-font-size);
+  line-height: var(--line-height-xs);
+}
+
+.isi-tray.block .boxed-warning {
+  padding: 6px 4px;
+  border: 2px solid var(--black-olive);
+}
+
+.isi-tray.block .boxed-warning li {
+  font-weight: var(--font-weight-bold);
+}
+
+/* Initial Tray shown before collaped & cookied */
+.isi-tray.block .initial-tray {
+  display: block;
+  position: fixed;
+  width: 100vw;
+  left: 0;
+  bottom: 0;
+  z-index: 100;
+  background-color: var(--white);
+  box-shadow: 0 -2px 10px 3px rgba(0 0 0 / 25%);
+  border-top: 2px solid var(--black-olive);
+  transition: bottom 1s ease-out;
+}
+
+.isi-tray.block.gammagard-liquid .initial-tray {
+  border-top: 2px solid var(--gammagard-liq);
+}
+
+.isi-tray.block.gammagard-sd .initial-tray {
+  border-color: var(--gammagard-sd);
+}
+
+.isi-tray.block.hyqvia .initial-tray {
+  border-color: var(--hyqvia);
+}
+
+.isi-tray.block.cuvitru .initial-tray {
+  border-color: var(--cuvitru);
+}
+
+.isi-tray.block.flexbumin .initial-tray {
+  border-color: var(--flexbumin);
+}
+
+.isi-tray.block.glassia .initial-tray {
+  border-color: var(--glassia);
+}
+
+.isi-tray.block.aralast .initial-tray {
+  border-color: var(--aralast);
+}
+
+.isi-tray.block.cookied .initial-tray,
+.isi-tray.block.expanded .initial-tray {
+  display: none;
+}
+
+.isi-tray.block .initial-tray > h5 {
+  margin: 8px 20px;
+  max-width: calc(100% - 125px); /* buttons and margins */
+}
+
+.isi-tray.block .initial-tray > div:not(.buttons) {
+  margin: 5px 20px 12px;
+}
+
+.isi-tray.block .initial-tray .boxed-warning {
+  padding: 0 4px;
+}
+
+.isi-tray.block .initial-tray .boxed-warning h5 {
+  margin: 0;
+}
+
+.isi-tray.block .initial-tray .boxed-warning ul {
+  margin-bottom: .5em;
+}
+
+  /* Tray view when collapsed */
+.isi-tray.block .collapsed-tray {
+  display: none;
+  position: fixed;
+  width: 100vw;
+  left: 0;
+  bottom: 0;
+  z-index: 100;
+  padding: 0 12px 12px;
+  background-color: var(--medium-gray);
+  border-top: 2px solid var(--black-olive);
+  box-shadow: 0 -2px 10px 3px rgba(0 0 0 / 25%);
+}
+
+.isi-tray.block.gammagard-liquid .collapsed-tray {
+  border-color: var(--gammagard-liq);
+}
+
+.isi-tray.block.gammagard-sd .collapsed-tray {
+  border-color: var(--gammagard-sd);
+}
+
+.isi-tray.block.hyqvia .collapsed-tray {
+  border-color: var(--hyqvia);
+}
+
+.isi-tray.block.cuvitru .collapsed-tray {
+  border-color: var(--cuvitru);
+}
+
+.isi-tray.block.flexbumin .collapsed-tray {
+  border-color: var(--flexbumin);
+}
+
+.isi-tray.block.glassia .collapsed-tray {
+  border-color: var(--glassia);
+}
+
+.isi-tray.block.aralast .collapsed-tray {
+  border-color: var(--aralast);
+}
+
+
+.isi-tray.block.cookied .collapsed-tray {
+  display: block;
+}
+
+.isi-tray.block.expanded .collapsed-tray {
+  display: none;
+}
+
+.isi-tray.block .collapsed-tray .mobile > div:first-of-type {
+  margin-top: 5px;
+  max-width: calc(100% - 85px); /* Buttons and margins */
+}
+
+.isi-tray.block .collapsed-tray .desktop {
+  display: none;
+  padding: 0 8px
+}
+
+
+.isi-tray.block .collapsed-tray .desktop > h5:first-of-type {
+  margin-top: 4px;
+}
+
+.isi-tray.block .collapsed-tray p {
+  margin: 2px 0;
+  font-size: var(--tray-font-size);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-xs);
+}
+
+/* Expanded view of full ISI Tray */
+.isi-tray.block .expanded-tray {
+  padding-top: 10px;
+}
+
+/* stylelint-disable-next-line no-descending-specificity */
+.isi-tray.block .expanded-tray .indication h5 {
+  margin: 8px 0;
+  max-width: 70%;
+}
+
+.isi-tray.block .safety-info .boxed-warning {
+  margin-bottom: 15px;
+}
+
+.isi-tray.block a.scroll-to-top {
+  font-size: var(--body-font-size-m);
+  font-weight: var(--font-weight-semibold);
+}
+
+@media screen and (min-width: 900px) {
+  .isi-tray.block {
+    --tray-font-size: var(--body-font-size-s);
+  }
+
+  .isi-tray.block .collapsed-tray p {
+    font-size: var(--tray-font-size);
+  }
+
+  .isi-tray.block .initial-tray {
+    display: none;
+  }
+
+  .isi-tray.block .collapsed-tray {
+    display: block;
+    background-color: var(--white);
+  }
+
+  .isi-tray.block .collapsed-tray .mobile {
+    display: none;
+  }
+
+  .isi-tray.block .collapsed-tray .desktop {
+    display: block;
+  }
+}

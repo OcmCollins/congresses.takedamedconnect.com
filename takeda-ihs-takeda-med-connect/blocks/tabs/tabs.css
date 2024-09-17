@@ -1,0 +1,47 @@
+
+.tabs.block .tab-link,
+.tabs.block .tab {
+  display: none;
+  opacity: 0;
+  transition: opacity 400ms, display 400ms;
+}
+
+.tabs.block .tab-link.visible,
+.tabs.block .tab.visible {
+  display: block;
+  opacity: 1;
+}
+
+.tabs.block .tab-selector {
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: flex-end;
+}
+
+.tabs.block .tab-selector .tab-link a {
+  display: flex;
+  padding: 8px 20px;
+  align-items: center;
+  font-size: var(--body-font-size-m);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-l);
+  text-decoration: none;
+  color: var(--black);
+  background-color: var(--white);
+  border-radius: 4px;
+  box-shadow: 3px 3px 7px 1px rgba(0 0 0 / 20%);
+}
+
+.tabs.block .tab-selector .tab-link span.icon {
+  display: inline-block;
+  height: 12px;
+  width: 12px;
+  margin-left: 8px;
+}
+
+.tabs.block .tab-selector .tab-link span.icon svg {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+

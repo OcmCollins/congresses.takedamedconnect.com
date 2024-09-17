@@ -1,0 +1,79 @@
+
+.cards.profile.block {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.75em;
+}
+
+.cards.profile.block .card {
+  display: grid;
+  padding: 16px;
+  grid-template:
+      'rule rule' min-content
+      'image details' min-content
+      / 1fr 3fr;
+  column-gap: 16px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px 0 rgba(0 0 0 / 20%);
+  background-color: var(--white);
+}
+
+.cards.profile.block .card hr {
+  border-top: 3px solid var(--red);
+  width: 100%;
+  grid-area: rule;
+}
+
+.cards.profile.block .card .image {
+  grid-area: image;
+  flex-basis: 30%;
+}
+
+.cards.profile.block .card .image p {
+  margin-bottom: .5em;
+  font-size: var(--body-font-size-l);
+  font-weight: var(--font-weight-bold);
+  color: var(--black);
+}
+
+.cards.profile.block .card .image picture {
+  display: block;
+  position: relative;
+  padding-bottom: 100%;
+}
+
+.cards.profile.block .card .image picture img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-position: center center;
+  object-fit: contain;
+}
+
+.cards.profile.block .card .details {
+  grid-area: details;
+}
+
+.cards.profile.block .card .details p {
+  font-size: var(--body-font-size-xs);
+}
+
+@media screen and (min-width: 900px) {
+  .cards.profile.block .card .image p {
+    font-size: var(--body-font-size-l);
+  }
+
+  .cards.profile.block .card .details p {
+    font-size: var(--body-font-size-s);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .cards.profile.block {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.75em;
+  }
+}

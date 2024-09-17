@@ -1,0 +1,67 @@
+@import url('./icon.css');
+@import url('./icon-cta.css');
+@import url('./product.css');
+@import url('./profile.css');
+@import url('./cta.css');
+
+.cards.default.block {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.75em;
+}
+
+
+.cards.default.block > div {
+  padding: 20px 16px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px 0 rgba(0 0 0 / 20%);
+  background-color: rgba(255 255 255 / 66%);
+}
+
+.cards.default.block.white-bg > div {
+  padding: 20px 16px;
+  border-radius: 10px;
+  background-color: var(--white);
+}
+
+.cards.default.block > div > div > p:first-of-type {
+  margin-bottom: 0;
+  font-size: var(--body-font-size-m);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-xxl);
+  color: var(--red);
+}
+
+.cards.default.block > div > div > h2 {
+  margin-bottom: 6px;
+  line-height: var(--line-height-xs);
+  color: var(--black);
+}
+
+.cards.default.block > div > div > ul {
+  margin-left: 1.25em;
+  margin-bottom: 1.5em;
+  list-style: disc;
+}
+
+.cards.default.block > div > div > ul li {
+  color: var(--quartz);
+}
+
+@media screen and (min-width: 600px) {
+  .cards.default.block > div {
+    padding: 20px 32px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px 0 rgba(0 0 0 / 20%);
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .cards.default.block {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .cards.default.block > div > div > h2 {
+    font-size: var(--heading-font-size-s);
+  }
+}

@@ -1,0 +1,316 @@
+.form-preview {
+  --form-columns: 1;
+}
+.container {
+  height: 89%;
+  display: flex;
+  flex-wrap: wrap;
+  line-height: normal;
+  font-size: 16px;
+}
+.container hr {
+  margin-top: 0;
+  border-bottom: 2px solid gray;
+}
+
+.status {
+  display: flex;
+  align-items: center;
+}
+
+.left {
+  max-width: 20%;
+  flex-basis: 20%;
+  padding: 24px;
+  border-right: 2px solid lightgray;
+}
+
+.right {
+  flex-basis: 78%;
+  padding: 20px;
+}
+
+.right .header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  display: block;
+}
+.recaptcha-icon {
+  background: url(../svg/recaptcha.svg) no-repeat;
+}
+.marketo-icon {
+  margin-top: -12px;
+  background: url(../svg/marketo.svg) no-repeat;
+}
+
+.attachment-icon {
+  background: url(../svg/attachments.svg) no-repeat;
+}
+
+.pdf-icon {
+  background: url(../svg/pdf.svg) no-repeat;
+}
+
+form label {
+  width: 150px;
+}
+
+.left :is(input, select) {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button:disabled {
+  background-color: #cccccc;
+  color: #666666;
+  cursor: not-allowed;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  height: 45px;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.cards-container a {
+  text-decoration: none;
+}
+.card {
+  background-color: white;
+  color: #4a4a4a;
+  width: 100%;
+  position: relative;
+  border-top: 1px solid #dbdbdb;
+  cursor: pointer;
+}
+.card.selected {
+  border-bottom: 4px solid green;
+  border-top: 4px solid green;
+}
+.card .card-content .follow-info {
+  padding: 0 0 1rem;
+  display: flex;
+}
+.card .card-content .follow-info h2 {
+  text-align: center;
+  width: 50%;
+  margin: 0;
+  box-sizing: border-box;
+}
+.card .card-content .follow-info h2 div {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.8rem;
+  transition: background-color 100ms ease-in-out;
+}
+.card .card-content .follow-info h2 div span {
+  color: #1c9eff;
+  font-weight: bold;
+}
+.card .card-content .follow-info h2 div small {
+  color: #afafaf;
+  font-size: 0.85rem;
+  font-weight: normal;
+}
+.card-header-title {
+  align-items: center;
+  color: #363636;
+  display: flex;
+  padding: 0 0.75rem;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.features {
+  display: flex;
+}
+
+.title {
+  color: #4CAF50;
+  font-weight: bold;
+}
+
+.card-footer {
+  border-top: 1px solid #dbdbdb;
+  align-items: stretch;
+  display: flex;
+}
+card-footer-item:not(:last-child) {
+  border-right: 1px solid #dbdbdb;
+}
+
+.card-footer-item {
+  align-items: center;
+  display: flex;
+  flex-basis: 0;
+  flex-grow: 1;
+  flex-shrink: 0;
+  padding: 0.75rem;
+}
+
+.ribbon span {
+  display: block;
+  padding: 15px;
+  background-color: #db9c34;
+  box-shadow: 0 5px 10px rgba(0,0,0,.1);
+  color: #fff;
+  font-weight: bold
+}
+
+.ribbon[data-pdf="true"] span {
+  background-color: #3498db;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.smartfill button,
+.toolbar button {
+  width: auto;
+}
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.stats > div {
+  text-align: center;
+  min-width: 110px;
+}
+
+.stats span {
+  font-weight: 700;
+  font-size: 35px;
+  color: #1c9eff;
+}
+
+.smartfill {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+}
+
+input[type=file] {
+  padding-top: 10px;
+}
+
+input::file-selector-button {
+  color: dodgerblue !important;
+  background-color: #fff;
+}
+
+#smartprefill:checked ~ .smartprefill-container {
+  display: block;
+}
+
+#smartprefill:checked ~ .stats-container {
+  display: none;
+}
+.smartprefill-container {
+  display: none;
+}
+
+.error {
+  color: red;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #4CAF50;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #4CAF50;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.switchcontainer {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+#editor {
+  width: 100%;
+  height: 500px;
+}
+
+.hide {
+  display: none;
+}
+
+iframe {
+  width: 50%;
+  height: 100%;
+}

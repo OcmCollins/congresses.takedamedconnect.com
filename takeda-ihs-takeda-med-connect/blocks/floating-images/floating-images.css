@@ -1,0 +1,75 @@
+/* styles for the floating images auto block */
+
+.section.floating-images-container.grey  {
+  background-color: var(--brand--secondary-subtle);
+}
+
+.block.floating-images > div {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: start;
+  gap: 1em;
+}
+
+.block.floating-images > div > div {
+  flex: 1;
+}
+
+.block.floating-images .image picture {
+  display: block;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.block.floating-images .image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.block.floating-images .content {
+  padding: 0 24px;
+}
+.block.floating-images .content h3 {
+  color:red;
+  font-size: var(--body-font-size-l);
+  font-weight: var(--font-weight-normal);
+}
+
+.block.floating-images .content p:first-of-type  {
+  color: var(--dark-red);
+}
+
+.block.floating-images .content ul {
+  margin-left: 1em;
+  margin-bottom: 1em;
+  list-style-type: disc;
+}
+
+.block.floating-images .content ul li {
+  margin-bottom: 1.5em;
+  padding-left: 1em;
+}
+
+@media screen and (min-width: 600px) {
+  .block.floating-images > div {
+    flex-direction: row;
+    align-items: start;
+    padding:20px 0;
+  }
+
+  .block.floating-images.image-left > div {
+    flex-direction: row-reverse;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .block.floating-images > div {
+    gap: 30px;
+  }
+}

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 134.74 134.74">
+    <defs>
+        <style>
+            .test-tube-cls-1{isolation:isolate;}
+            .test-tube-cls-2{fill:#ed1100;mix-blend-mode:multiply;}
+            .test-tube-cls-3{fill:#fff;}
+            .test-tube-cls-4{fill:none;stroke:#fff;stroke-linejoin:round;stroke-width:2.31px;}
+        </style>
+    </defs>
+    <g class="test-tube-cls-1">
+        <g id="Layer_2" data-name="Layer 2">
+            <g id="Layer_1-2" data-name="Layer 1">
+                <circle class="test-tube-cls-2" cx="67.37" cy="67.37" r="67.37"/>
+                <path class="test-tube-cls-3" d="M59.87,61V86.82a6.52,6.52,0,0,0,6.5,6.5h.69a6.52,6.52,0,0,0,6.5-6.5V61Z"/>
+                <path class="test-tube-cls-4" d="M57.34,31.24V86.59a9,9,0,0,0,8.9,9.09h1a9,9,0,0,0,8.9-9.09V31.24l2.91-5H54.45Z"/>
+                <path class="test-tube-cls-3" d="M68,36H59.87V34.81H68a.61.61,0,0,1,.61.61h0A.61.61,0,0,1,68,36Z"/>
+                <path class="test-tube-cls-3" d="M68,53.77H59.87V52.55H68a.61.61,0,0,1,.61.61h0A.61.61,0,0,1,68,53.77Z"/>
+                <path class="test-tube-cls-3" d="M65.08,40.46H59.87V39.25h5.21a.61.61,0,0,1,.61.61h0A.61.61,0,0,1,65.08,40.46Z"/>
+                <path class="test-tube-cls-3" d="M65.08,44.9H59.87V43.68h5.21a.62.62,0,0,1,.61.61h0A.61.61,0,0,1,65.08,44.9Z"/>
+                <path class="test-tube-cls-3" d="M65.08,49.34H59.87V48.12h5.21a.61.61,0,0,1,.61.61h0A.62.62,0,0,1,65.08,49.34Z"/>
+                <path class="test-tube-cls-3" d="M65.08,58.21H59.87V57h5.21a.61.61,0,0,1,.61.61h0A.62.62,0,0,1,65.08,58.21Z"/>
+            </g>
+        </g>
+    </g>
+</svg>

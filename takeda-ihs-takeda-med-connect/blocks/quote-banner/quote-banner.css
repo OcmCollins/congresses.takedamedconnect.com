@@ -1,0 +1,117 @@
+/* Global overrides */
+
+main > .section.quote-banner-container {
+  padding: 0;
+}
+
+main > .section.quote-banner-container > .quote-banner-wrapper {
+  padding: 0;
+  margin: 0;
+  max-width: unset;
+}
+
+/* End overides */
+
+.quote-banner.block {
+  display: flex;
+  position: relative;
+  height: 370px;
+  align-items: center;
+  justify-content: center;
+}
+
+.quote-banner.block > div {
+  padding: 56px 16px;
+}
+
+.quote-banner.block.top-gradient .gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 80px;
+  width: 100%;
+  z-index: 2;
+  background: linear-gradient(180deg, white 0, white 20%, transparent 100%);
+}
+
+.quote-banner.block .bg-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.quote-banner.block .bg-wrapper picture {
+  display: block;
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.quote-banner.block .bg-wrapper picture img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: .5;
+  object-position: center center;
+  object-fit: cover;
+}
+
+
+.quote-banner.block > div .content {
+  position: relative;
+  padding: 48px 26px;
+  z-index: 1;
+  border: 4px solid var(--white);
+  background-color: rgba(255 255 255 / 70%);
+}
+
+.quote-banner.block p {
+  margin-bottom: 0;
+  font-weight: var(--font-weight-semibold);
+  text-align: center;
+}
+
+.quote-banner.block p em {
+  font-style: normal;
+  font-weight: var(--font-weight-bold);
+  color: var(--red);
+}
+
+@media screen and (min-width: 600px) {
+  .quote-banner.block {
+    height: 460px;
+  }
+
+  .quote-banner.block > div {
+    padding: 100px 16px
+  }
+
+  .quote-banner.block.top-gradient .gradient {
+    height: 80px;
+  }
+
+  .quote-banner.block .content {
+    max-width: 760px;
+  }
+
+  .quote-banner.block .content p {
+    font-size: var(--heading-font-size-s);
+  }
+
+}
+
+@media screen and (min-width: 900px) {
+  .quote-banner.block {
+    height: 550px;
+  }
+
+  .quote-banner.block .content p {
+    font-size: var(--heading-font-size-l);
+  }
+}
